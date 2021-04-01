@@ -62,6 +62,9 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip ahead");
 	video.currentTime += 15;
+	if (video.currentTime >= 67.403333) {
+		video.currentTime = 0;
+	}
 	video.loop = true;
 	console.log(video.currentTime)
 });
