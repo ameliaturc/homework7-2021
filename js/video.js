@@ -62,7 +62,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip ahead");
 	video.currentTime += 15;
-	console.log(video.currentTime)
 	video.loop = true;
+	console.log(video.currentTime)
 });
 
